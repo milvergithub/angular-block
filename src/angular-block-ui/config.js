@@ -1,6 +1,7 @@
 blkUI.constant('blockUIConfig', {
     templateUrl: 'angular-block-ui/angular-block-ui.ng.html',
     delay: 250,
+    spinner: 'loadIcon',
     message: "Loading ...",
     autoBlock: true,
     resetOnException: true,

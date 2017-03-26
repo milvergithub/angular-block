@@ -1,6 +1,6 @@
 /*!
-   angular-block-ui v0.2.1
-   (c) 2015 (null) McNull https://github.com/McNull/angular-block-ui
+   angular-block-ui v0.2.2
+   (c) 2017 (null) McNull https://github.com/McNull/angular-block-ui
    License: MIT
 */
 (function(angular) {
@@ -298,6 +298,7 @@ blkUI.directive('blockUi', ["blockUiCompileFn", function (blockUiCompileFn) {
 blkUI.constant('blockUIConfig', {
     templateUrl: 'angular-block-ui/angular-block-ui.ng.html',
     delay: 250,
+    spinner: 'loadIcon',
     message: "Loading ...",
     autoBlock: true,
     resetOnException: true,
@@ -727,7 +728,7 @@ blkUI.factory('blockUIUtils', function() {
 // This file is already embedded in your main javascript output, there's no need to include this file
 // manually in the index.html. This file is only here for your debugging pleasures.
 angular.module('blockUI').run(['$templateCache', function($templateCache){
-  $templateCache.put('angular-block-ui/angular-block-ui.ng.html', '<div class=\"block-ui-overlay\"></div><div class=\"block-ui-message-container\" aria-live=\"assertive\" aria-atomic=\"true\"><div class=\"block-ui-message\" ng-class=\"$_blockUiMessageClass\">{{ state.message }}</div></div>');
+  $templateCache.put('angular-block-ui/angular-block-ui.ng.html', '<div class=\"block-ui-overlay\"></div><div class=\"block-ui-message-container\" aria-live=\"assertive\" aria-atomic=\"true\"><div class=\"loadIcon\"><div></div><div></div><div></div><div></div></div></div>');
 }]);
 })(angular);
 //# sourceMappingURL=angular-block-ui.js.map

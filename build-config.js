@@ -15,7 +15,7 @@ var config = {
   env: process.env.NODE_ENV,
 
   folders: {
-    dest: 'dest/',
+    dest: 'dist/',
     src: 'src/'
   },
 
